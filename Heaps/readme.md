@@ -50,11 +50,17 @@ It's array representation would be `[9,7,4,6,5,2]`.
 
 We insert the element at the bottom and then swim it up until parent element is not bigger or root node is reached.
 
-#### Complexity: O(n)
+#### Complexity: O(log n)
 
 ### Deletion
 
 We always pop or remove the largest/root element from a heap.
 For that, we swap the root element with the last element in the array and then sink it down until no child element is not smaller than the number or leaf node is reached.
 
-#### Complexity: O(n)
+#### Complexity: O(log n)
+
+### Heapify
+
+Given a regular array, heapify is a process of converting that into heap.
+
+#### Complexity: O(n log(n))
